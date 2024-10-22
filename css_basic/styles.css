@@ -1,71 +1,59 @@
-/* styles.css */
-
-/* Make the body a flex container with a column direction */
 body {
     display: flex;
     flex-direction: column;
-}
-
-/* Make the main section a flex container with a row direction */
-main {
-    display: flex;
-    flex-direction: row;
-    flex: auto; /* Allow main to take automatic height and width */
-}
-
-/* Style for the article */
-article {
-    flex: 2; /* Article takes up 2/3 of the width */
-    overflow-y: auto; /* Enable vertical scrolling if needed */
-}
-
-/* Style for the aside */
-aside {
-    flex: 1; /* Aside takes up 1/3 of the width */
-    overflow-y: auto; /* Enable vertical scrolling if needed */
-}
-
-/* Additional styling for header, footer, and other elements as needed */
-header, footer {
-    background-color: #f8f8f8; /* Example background color */
-    padding: 10px;
-    text-align: center;
-}
-
-h1, h2, h3 {
     margin: 0;
+    font-family: Arial, sans-serif; /* Set a default font for the body */
 }
 
-table {
-    width: 100%; /* Make the table responsive */
-    border-collapse: collapse; /* Collapse borders for cleaner look */
+header {
+    background-color: #333; /* Dark background for header */
+    color: white; /* White text color */
+    padding: 20px; /* Padding for header */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center align items */
 }
 
-th, td {
-    border: 1px solid #ddd; /* Add border to table cells */
-    padding: 8px; /* Add padding to table cells */
-    text-align: left; /* Align text to the left */
+nav ul {
+    list-style-type: none; /* Remove default list style */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margin */
+    display: flex; /* Use flexbox for navigation */
+    align-items: center; /* Center items vertically */
 }
 
-th {
-    background-color: #f2f2f2; /* Header background color */
+nav ul li {
+    margin-right: 20px; /* Space between items */
 }
 
-.works_on_smartphone {
-    /* Add any smartphone specific styles here if needed */
+.logo {
+    font-size: 24px; /* Size of the logo */
+    margin-right: 10px; /* Space between logo and nav items */
 }
 
-/* Add media queries if necessary for further responsiveness */
-@media (max-width: 768px) {
-    main {
-        flex-direction: column; /* Stack article and aside vertically on small screens */
-    }
-
-    article, aside {
-        flex: none; /* Reset flex properties */
-        width: 100%; /* Full width on small screens */
-    }
+main {
+    display: flex; /* Use flexbox for main content */
+    flex-direction: row; /* Row direction for article and aside */
+    flex: auto; /* Allow main to grow */
+    padding: 20px; /* Padding around main content */
 }
 
+article {
+    flex: 2; /* Take more space */
+    padding: 10px; /* Padding inside article */
+}
 
+aside {
+    flex: 1; /* Take less space */
+    padding: 10px; /* Padding inside aside */
+    background-color: #f0f0f0; /* Light background for aside */
+}
 
+footer {
+    background-color: #333; /* Dark background for footer */
+    color: white; /* White text color */
+    text-align: center; /* Center text in footer */
+    padding: 10px; /* Padding for footer */
+}
+
+  

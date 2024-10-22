@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Headphones Landing Page</title>
+    <link rel="stylesheet" href="3-styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        .pentagon {
+            width: 0;
+            height: 0;
+            border-left: 100px solid transparent;
+            border-right: 100px solid transparent;
+            border-bottom: 173.2px solid #FF6565; /* Color of the pentagon */
+            position: relative;
+            margin: 20px auto; /* Center the pentagon */
+        }
+
+        .pentagon::before {
+            content: '';
+            width: 0;
+            height: 0;
+            border-left: 100px solid transparent;
+            border-right: 100px solid transparent;
+            border-top: 100px solid #FF6565; /* Color of the pentagon */
+            position: absolute;
+            top: -100px; /* Adjust position */
+            left: -100px; /* Adjust position */
+        }
+
+        .pentagon h3 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white; /* Text color */
+            font-size: 1.5em; /* Font size */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="C:/Users/User/Desktop/musicwebsite/logo_headphones.png" alt="Headphones Logo">
+            </div>
+            <ul class="nav-links">
+                <li><a href="#what-we-do">What We Do</a></li>
+                <li><a href="#">Our Results</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+
+        <section class="hero">
+            <div class="overlay">
+                <h1>Feel Every Beat. Immerse in Every Note.</h1>
+                <p>Rediscover the magic of sound with groundbreaking audio technology designed for true music lovers.</p>
+                <button class="cta-button">Shop Now</button>
+                <br/>
+                <p>Our headphones bring you closer to your music than ever before. Engineered with cutting-edge noise cancellation and crystal-clear audio, they deliver the perfect blend of rich bass, sharp highs, and balanced mids. Whether you're at home, on the move, or in the studio, experience the ultimate in comfort and sound clarity. Built to last, designed to impress – your gateway to an unforgettable audio journey awaits.</p>
+            </div>
+        </section>
+    </header>
+
+    <main>
+        <section class="what-we-do" id="what-we-do">
+            <div class="container">
+                <h2>What We Do</h2>
+                <p>We push the boundaries of audio innovation, producing world-class sound that elevates every experience. From creating immersive soundscapes for music lovers to crafting professional-grade audio solutions for content creators, we do it all.</p>
+                <div class="services">
+                    <div class="service">
+                        <i class="fas fa-microphone-alt" style="color: #FF6565;"></i>
+                        <h3>Audio Mastery</h3>
+                        <p>World-class audio production that redefines the listening experience.</p>
+                    </div>
+                    <div class="service">
+                        <i class="fas fa-video" style="color: #FF6565;"></i>
+                        <h3>Visual Brilliance</h3>
+                        <p>Creating stunning videos with seamless sound integration.</p>
+                    </div>
+                    <div class="service">
+                        <i class="fas fa-music" style="color: #FF6565;"></i>
+                        <h3>Music Magic</h3>
+                        <p>Composing original scores that move and inspire.</p>
+                    </div>
+                    <div class="service">
+                        <i class="fas fa-headphones" style="color: #FF6565;"></i>
+                        <h3>Sound Design</h3>
+                        <p>Unleashing the power of sound with expert design and precision.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="our-results">
+            <div class="container">
+                <h2>Our Results Speak Volumes</h2>
+                <p>Our relentless pursuit of audio excellence has earned us global recognition. From rave reviews to rising demand, the results are clear: we’re transforming the way people experience sound. Here’s how we’re raising the bar:</p>
+                <div class="result-icons">
+                    <div class="result-item">
+                        <div class="result-icon">
+                            <h3>+8%</h3>
+                        </div>
+                        <p>Enhanced Video Production</p>
+                    </div>
+                    <div class="result-item">
+                        <div class="result-icon">
+                            <h3>+5%</h3>
+                        </div>
+                        <p>Improved Audio Output</p>
+                    </div>
+                    <div class="result-item">
+                        <div class="result-icon">
+                            <h3>+9%</h3>
+                        </div>
+                        <p>Customer Satisfaction</p>
+                    </div>
+                    <div class="result-item">
+                        <div class="result-icon">
+                            <h3>+13%</h3>
+                        </div>
+                        <p>New Listeners Worldwide</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="contact-section">
+                <h2>Get in Touch</h2>
+                <p>We’re here to help you create your best sound experience yet. Reach out to us with any questions, or just to say hello!</p>
+                <form class="contact-form">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Your Email" required>
+                    
+                    <label for="message">Your Message</label>
+                    <textarea id="message" name="message" rows="4" placeholder="Tell us how we can help..." required></textarea>
+                    
+                    <button type="submit" class="cta-button">Send Message</button>
+                </form>
+            </div>
+        </section>
+
+        <!-- New Pentagon Section -->
+        <section>
+            <div class="pentagon">
+                <h3>Our Vision</h3>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <!-- Footer content here -->
+    </footer>
+</body>
+</html>
